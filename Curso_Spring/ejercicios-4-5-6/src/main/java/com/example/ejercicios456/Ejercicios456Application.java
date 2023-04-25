@@ -1,7 +1,7 @@
 package com.example.ejercicios456;
 
-import com.example.ejercicios456.Entity.LaptopModel;
-import com.example.ejercicios456.Repository.LaptopRepository;
+import com.example.ejercicios456.entity.LaptopModel;
+import com.example.ejercicios456.repository.LaptopRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

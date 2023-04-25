@@ -1,4 +1,4 @@
-package com.example.ejercicios456;
+package com.example.ejercicios456.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

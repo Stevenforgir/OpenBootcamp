@@ -1,5 +1,7 @@
-package com.example.ejercicios456;
+package com.example.ejercicios456.Controller;
 
+import com.example.ejercicios456.Entity.LaptopModel;
+import com.example.ejercicios456.Repository.LaptopRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

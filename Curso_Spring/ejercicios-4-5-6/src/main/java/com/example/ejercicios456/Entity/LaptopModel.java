@@ -1,4 +1,4 @@
-package com.example.ejercicios456;
+package com.example.ejercicios456.Entity;
 
 import javax.persistence.*;
 

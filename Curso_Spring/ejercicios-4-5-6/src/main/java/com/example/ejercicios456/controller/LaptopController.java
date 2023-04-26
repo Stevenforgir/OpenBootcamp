@@ -22,13 +22,13 @@ public class LaptopController {
         return laptopRepository.findAll();
     }
 
-    @ApiOperation("Traer laptop por id, no hay manejo de excepciones por el momento")
+    @ApiOperation("Traer laptop por id")
     @GetMapping("find/{id}")
     public Optional<LaptopModel> findLaptopById(@PathVariable Long id){
         return laptopRepository.findById(id);
     }
 
-    @ApiOperation("Crear una laptop en DB")
+    @ApiOperation("Crear una laptop")
     @PostMapping("/create")
     public ResponseEntity<LaptopModel> createLaptop(@RequestBody LaptopModel laptop) {
         if(laptop.getId() != null) {
@@ -37,6 +37,7 @@ public class LaptopController {
         return ResponseEntity.badRequest().build();
     }
 
+    @ApiOperation("Actualizar una laptop")
     @PutMapping("/update")
     public ResponseEntity<LaptopModel> updateLaptop(@RequestBody LaptopModel laptop) {
         if(laptop.getId() != null) {
@@ -45,6 +46,7 @@ public class LaptopController {
         return ResponseEntity.badRequest().build();
     }
 
+    @ApiOperation("Eliminar una laptop")
     @DeleteMapping("/delete")
     public ResponseEntity<String> deleteLaptop(@PathVariable Long id){
         try{
